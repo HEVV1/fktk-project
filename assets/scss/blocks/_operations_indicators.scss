@@ -1,0 +1,29 @@
+.block-operations-indicators{
+    .wrapper-operations-indicators{
+        width: 100%;
+        display: flex;
+        .indicator{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 1.5px;
+            margin-right: 1.5px;
+            width: 92px;
+            height: 4px;
+            &.lightblue{
+                background-color: $color_18;
+            }
+            &.blue{
+                background-color: $color_19;
+            }
+            &.violet{
+                background-color: $color_20;
+            }
+            &.pink{
+                background-color: $color_21;
+            }
+            &.orange{
+                background-color: $color_22;
+            }
+        }
+    }
+}

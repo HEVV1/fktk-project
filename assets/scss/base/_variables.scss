@@ -1,0 +1,53 @@
+/* Colors -----------------------------------------------------------------*/
+$color_1:  #FFFFFF; // White
+$color_2:  #242424; // Black
+$color_3:  #378292; // Green
+$color_4:  #CDCDCD; // Grey
+$color_5:  #F1F1F1; // Light grey
+$color_6:  #2D7C8D; // Blue color footer
+$color_7:  #B01860; // Violet
+$color_8:  #155260; // Dark green
+$color_9:  #272727; // Black
+$color_10: #19645F; // Light Green
+$color_11: #E2F2EF; //Slightly blue
+$color_12: #DFE8F0; //Light blue
+$color_13: #23447A; //Deep Blue
+$color_14: #FFF8E5; //Yellow
+$color_15: #BC9D2D; //DarkYellow
+$color_16: #EAF3FC; //Ultra light some color
+$color_17: #F5FFFD; //Ultra light green
+$color_18: #3AC0F2; //Pure blue
+$color_19: #4352AC; //Dark Blue
+$color_20: #5F43A4; //Pure Violet
+$color_21: #F031A2; //Pure Pink
+$color_22: #F03464; //Almost Orange
+
+
+/* Fonts ------------------------------------------------------------------*/
+$font_awesome_5_pro: 'Font Awesome 5 Pro';
+$font_montserrat_stack: 'Montserrat', sans-serif;
+$font_opens_sans_stack: 'Open Sans', sans-serif;
+$font_poppins_stack: 'Poppins', sans-serif;
+$default_font_stack: $font_montserrat_stack;
+$default_font_size: 15px;
+$default_font_weight: 400;
+$default_line_height: 20px;
+$default_font_color: $color_2;
+
+/* Other ------------------------------------------------------------------*/
+$regular_content_width: 1180px + 40px; // content + outside gutter (left and right together)
+$image_directory: '../../images/';
+$default_transition_time: 300ms;
+
+/* z-index-----------------------------------------------------------------*/
+$index_0: -1;   //Lowest Priority
+$index_1: 1000; //Default Priority
+$index_2: 2000;
+$index_3: 3000;
+$index_4: 4000;
+$index_5: 5000;
+$index_6: 6000;
+$index_7: 7000;
+$index_8: 8000;
+$index_9: 9000; 
+$index_highest_priority: 9999; //Higsert Priority

@@ -1,0 +1,22 @@
+.block-top-content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .wrapper-block-top-content{
+        .top-content{
+            .wrapper-text{
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .image{
+                img{
+                    width: 100%;
+                }
+            }
+            &:hover{
+                span{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,16 @@
+.button-primary{
+    color: $color_1;
+    background-color: $color_7;    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 43px;
+    padding-right: 43px;
+    text-align: center;
+}
+
+//Max-width: 768px
+@media (max-width: map-get($map: $grid-breakpoints, $key:'md' )){
+    .button-primary{     
+        width: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+.block-input-connect{  
+    max-width: 494px;
+    width: 100%;
+    height: 100%;
+    .wrapper-input{
+        width: 100%;
+        height: 100%;     
+        display: flex;
+        input{
+            padding-left: 21px;
+            padding-right: 21px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #CDCDCD;            
+        }
+    }    
+}
+
+//Max-width: 768px
+@media (max-width: map-get($map: $grid-breakpoints, $key:'md' )){
+    .block-input-connect{  
+        width: 100%;
+    }
+} 

@@ -1,0 +1,75 @@
+.block-cookies{
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: $color_7;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%); //Cookies hidden
+    z-index: $index_highest_priority;
+    transition: ease-in-out $default_transition_time;
+    .wrapper-cokies{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .wrapper-text{
+            color: $color_1;
+        }
+        .wrapper-cookies-text{
+            min-width: 210px; 
+            .cookies-text{
+                display: flex;
+                align-items: center;
+                &.text-without-underline{
+                    padding-bottom: 8px;
+                }
+                &.text-with-underline{
+                    border-top: 1px solid rgba($color: $color_1, $alpha: 0.4);
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                .wrapper-text{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        .wrapper-cookies-buttons{
+            .wrapper-button{
+                button{
+                    &:hover{
+                        color: $color_1;
+                        background-color: $color_7;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+.show-cookies{
+    transform: translateY(0);
+}
+
+//Max-width: 768px
+@media (max-width: map-get($map: $grid-breakpoints, $key:'md' )){
+    .block-cookies{     
+        padding-top: 20px;
+        .wrapper-cookies{            
+            .wrapper-cookies-text{
+                .cookies-text{
+                    &.text-without-underline{
+                        padding-bottom: 24px;                                          
+                    }
+                    &.text-with-underline{  
+                        border: 0;
+                        padding-top: 24px;
+                        padding-bottom: 24px;
+                    }
+                }
+            }
+        }        
+    }
+}

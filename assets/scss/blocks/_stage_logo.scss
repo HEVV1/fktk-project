@@ -1,0 +1,41 @@
+.block-stage-logo{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: red;
+    .wrapper-stage-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 160px;
+        height: 110px;
+        background-color: yellowgreen;
+        .img-part-1{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            &.img-border{
+                transform: translateY(24px);
+            }
+            &.img-icon{
+                width: 90px;
+                height: 90px;
+                transform: translateX(50%) translateY(-50%);
+                top: 50%;
+                right: 50%;
+            }
+            &.img-number-0{
+                width: 25px;
+                left: -5%;
+                top: -35%;
+            }
+            &.img-number-1{
+                width: 20px;
+                top: -50%;
+                left: 15%;
+            }
+        }
+    }
+}

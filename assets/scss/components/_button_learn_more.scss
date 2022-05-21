@@ -1,0 +1,55 @@
+.button-learn-more{    
+    position: relative;
+    font-size: 15px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: $font_opens_sans_stack;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 37px;
+    padding-right: 87px;
+    white-space: nowrap;
+    &::after{
+        content: '';
+        @include bgimgin('ic_arrow_right.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;        
+        width: 50px;
+        height: 100%;
+    }
+    &.black{
+        color: $color_9;
+        border: 1px solid $color_9;
+        &::after{
+            background-color: $color_9; 
+        }
+    }
+    &.green{
+        color: $color_10;
+        border: 1px solid $color_10;
+        &::after{
+            background-color: $color_10; 
+        }
+    }
+    &.deepblue{
+        color: $color_13;
+        border: 1px solid $color_13;
+        &::after{
+            background-color: $color_13; 
+        }
+    }
+    &.darkyellow{
+        color: $color_15;
+        border: 1px solid $color_15;
+        &::after{
+            background-color: $color_15; 
+        }
+    }
+    
+}

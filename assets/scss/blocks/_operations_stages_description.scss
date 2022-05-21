@@ -1,0 +1,21 @@
+.block-operations-stages-description{
+    width: 100%;
+    max-width: 250px;
+    .wrapper-operations-stages-description{
+        padding-left: 15px;
+        .wrapper-text{
+            &.text-title{
+                margin-left: -15px;
+            }
+        }
+    }
+    &.stages-description-4{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: map-get($map: $grid-breakpoints, $key: 'md' )){
+    .block-operations-stages-description{
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,47 @@
+.block-title{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .wrapper-title{
+        display: flex;
+        .title-text{
+            width: 50%;
+            margin-right: 10px;
+            .wrapper-text{
+                margin-top: 30px;
+            }            
+        }
+        .title-picture{
+            width: 50%;           
+            .image{
+                overflow: hidden;
+                clip-path: polygon(9% 0%, 99% 0%, 91% 100%, 0% 100%);               
+            }
+        }
+    }
+}
+
+
+@media (max-width: map-get($map: $grid-breakpoints, $key:'md' )){
+    .block-title{
+        .wrapper-title{
+            display: grid;
+            place-items: center;
+            .title-text{
+                width: 100%;
+                grid-row: 2;
+                .wrapper-text{
+                    text-align: center;
+                }
+            }
+            .title-picture{
+                width: 150%;                
+                .image{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }    
+}

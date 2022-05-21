@@ -1,0 +1,31 @@
+.block-footer-icon-contacts{ 
+    margin-right: 10px; 
+    margin-top: 7px;
+    margin-bottom: 7px;
+    .wrapper-icon{
+        display: inline-block;
+        a{
+            display: flex;
+            align-items: center;
+            .icon{
+                flex: 0 0 auto;
+                background-color: $color_1;
+                width: 35px;
+                height: 35px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color_3;
+                margin-right: 10px;
+            }            
+        }
+        &:hover{
+            .wrapper-text{
+                span{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

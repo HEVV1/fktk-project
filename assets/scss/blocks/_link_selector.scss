@@ -1,0 +1,41 @@
+.block-link-selector{    
+    .wrapper-link-selector{
+        margin-top: 10px;
+        position: relative;        
+        .wrapper-link-and-icon{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .wrapper-text{
+                a{
+                    margin-right: 5px;
+                }
+            }
+            i{
+                transition: ease-in-out $default_transition_time;
+            }          
+        }
+        &:hover{
+            >.block-popup{
+                visibility: visible;
+                opacity: 1;
+            }
+            .chevron{
+                transform: rotateZ(90deg);
+            }            
+        } 
+        .menu-chevron-on{
+            transform: rotateZ(90deg);
+        }             
+    }
+}
+
+//Max-width: 768px
+@media (max-width: map-get($map: $grid-breakpoints, $key:'md' )){
+    .block-link-selector{
+        .wrapper-link-selector{
+            margin-top: 10px;       
+            margin-bottom: 10px;
+        }       
+    }
+} 

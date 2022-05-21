@@ -1,0 +1,35 @@
+.block-text-widget{
+    display: flex;
+    flex-flow: column; 
+    grid-row: 1;     
+    &.text-left{
+        grid-column: 1;        
+        justify-content: end;
+    }
+    &.text-right{
+        grid-column: 2;              
+    }
+    .wrapper-text{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: map-get($map: $grid-breakpoints, $key:'md' )){
+    .block-text-widget{
+        padding-left: 27px;
+        padding-right: 27px;
+        grid-row: 2;
+        .wrapper-text{
+            text-align: center;
+        }
+        .wrapper-button{
+            text-align: center;
+        }
+        &.text-left{           
+            grid-column: 1;
+        }
+        &.text-right{            
+            grid-column: 1;
+        }
+    }
+}
